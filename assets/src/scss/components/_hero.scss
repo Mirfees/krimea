@@ -1,0 +1,119 @@
+@use "mixins" as *;
+
+.hero {
+  margin-bottom: 108px;
+  margin-top: 150px;
+
+  @include lg {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  // .hero__wrapper
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 175px;
+
+    @include lg {
+      gap: 50px;
+    }
+  }
+
+  // .hero__title
+  &__title {
+    font-size: 88px;
+    text-align: center;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+    @include xl {
+      font-size: 60px;
+    }
+
+    @include md {
+      font-size: 30px;
+    }
+  }
+
+  // .hero__info
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    @include lg {
+      align-items: center;
+    }
+
+    a {
+      display: block;
+      font-family: Romul;
+      background-color: rgba(255, 255, 255, 0.3);
+      outline: 1px solid #fff;
+      border-radius: 50px;
+      text-align: center;
+      width: 100%;
+      padding: 19px 29px;
+      font-size: 30px;
+
+      @include lg {
+        font-size: 15px;
+      }
+    }
+  }
+
+  // .hero__info-row
+  &__info-row {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 16px;
+
+    @include lg {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  // .hero__award
+  &__award {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    padding: 28px 25px;
+    width: 287px;
+    height: 296px;
+    outline: 1px solid #fff;
+
+    .liquid-glass--edge,
+    .liquid-glass--face,
+    .liquid-glass--bend,
+    .liquid-glass {
+      border-radius: 40px;
+    }
+  }
+
+  // .hero__text
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    padding: 18px 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #16304A;
+    font-size: 17px;
+    width: 287px;
+    height: 296px;
+    font-weight: 400;
+    outline: 1px solid #fff;
+
+    .liquid-glass--edge,
+    .liquid-glass--face,
+    .liquid-glass--bend,
+    .liquid-glass {
+      border-radius: 40px;
+    }
+  }
+}

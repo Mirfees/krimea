@@ -1,0 +1,74 @@
+@use "mixins" as *;
+
+.footer {
+  // .footer__wrapper
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    padding: 260px 190px;
+    gap: 60px;
+
+    @media (max-width: 1700px) {
+      padding: 100px 80px;
+    }
+
+    @media (max-width: 1500px) {
+      padding: 50px;
+      gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include xl {
+      padding: 20px 0;
+    }
+
+    @include lg {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // .footer__contacts
+  &__contacts {
+
+    border-radius: 40px;
+    background-color: #ffffff80;
+    font-size: 21px;
+    font-weight: 400;
+    color: #16304A;
+    border: 1px solid #fff;
+
+    .liquid-glass--edge,
+    .liquid-glass--face,
+    .liquid-glass--bend,
+    .liquid-glass {
+      border-radius: 40px;
+    }
+
+    .liquid-glass__link {
+      padding: 70px 24px;
+    }
+
+    .liquid-glass__inner,
+    .liquid-glass__link {
+      height: 100%;
+    }
+
+    a {
+      color: #16304A;
+    }
+  }
+
+  // .footer__contacts-text
+  &__contacts-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  // .footer__map
+  &__map {
+    overflow: hidden;
+    border-radius: 40px;
+  }
+}

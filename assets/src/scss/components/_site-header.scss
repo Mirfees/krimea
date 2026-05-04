@@ -1,0 +1,182 @@
+@use "mixins" as *;
+
+.header {
+  font-size: 20px;
+  z-index: 10;
+
+  @include xxl {
+    position: sticky;
+    top: 0;
+    font-size: 16px;
+  }
+  // .header__wrapper
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  // .header__conent
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+
+    @include xl {
+      display: none;
+      border: #fff solid 1px;
+      border-radius: 50px;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      padding: 15px;
+    }
+  }
+
+  // .header__center
+  &__center {
+    display: flex;
+    gap: 51px;
+    align-items: center;
+    justify-content: center;
+
+    @include xxl {
+      gap: 20px;
+    }
+
+    @include xl {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.logo {
+  display: block;
+  @include xxl {
+    width: 100px;
+  }
+}
+
+.burger {
+  @include burger;
+
+  &__wrapper {
+    display: none;
+
+    @include xxl {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+.menu {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 51px;
+    padding: 18px 48px;
+    border: #fff solid 1px;
+    border-radius: 50px;
+    background-color: #D9D9D91A;
+
+    @media (max-width: 1500px) {
+      gap: 10px;
+    }
+
+    @include xxl {
+      gap: 5px;
+      padding: 8px 20px;
+    }
+
+    @include xl {
+      flex-direction: column;
+      background-color: #00000000;
+      border: none;
+
+    }
+  }
+
+  li {
+    a {
+      display: block;
+      text-align: center;
+      width: 100px;
+      padding: 8px 0;
+      border-radius: 50px;
+
+      transition: background-color 0.2s, color 0.2s;
+
+      &:hover {
+        background-color: #16304A;
+      }
+    }
+  }
+}
+
+.make-call {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  a {
+    text-align: center;
+    align-self: start;
+    padding: 6px 30px;
+
+    @include xl {
+      align-self: center;
+    }
+  }
+
+  @include xl {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.social-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  a {
+    @include xl {
+      text-align: center;
+    }
+  }
+
+  &.-mobile- {
+    display: none;
+
+    @include xl {
+      display: block;
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+    a {
+      display: block;
+    }
+  }
+}
+
+.header__menus--active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 110px;
+  width: 300px;
+  right: 20px;
+}

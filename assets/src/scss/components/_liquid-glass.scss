@@ -1,0 +1,54 @@
+@use "mixins" as *;
+
+.liquid-glass {
+  --glass-padding: 16px;
+  --border-radius: 24px;
+  --transition: 0.4s cubic-bezier(0.5, 1.5, 0.5, 1);
+
+  position: relative;
+
+  &--no-border-radius {
+    --border-radius: 0px;
+    border-radius: 0;
+  }
+
+  &--border-radius-2 {
+    --border-radius: 2px;
+    border-radius: 2px;
+  }
+}
+
+.liquid-glass--bend {
+  backdrop-filter: blur(5px);
+  border-radius: var(--border-radius);
+  filter: url(#glass-blur);
+  inset: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.liquid-glass--face {
+  border-radius: var(--border-radius);
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.liquid-glass--edge {
+  border-radius: var(--border-radius);
+  box-shadow: inset -0px 1px 1px 0 rgba(255, 255, 255, 0.45), inset -1px -1px 3px 0 rgba(255, 255,255, 0.45);
+  inset: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.liquid-glass__inner {
+  display: flex;
+  gap: var(--menu-gap);
+  transition: gap var(--transition);
+}
+
+.liquid-glass__link {
+  width: 100%;
+  z-index: 3;
+}

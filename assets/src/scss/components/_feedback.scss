@@ -1,0 +1,117 @@
+@use "mixins" as *;
+
+.feedback {
+  background-color: #00000030;
+  border-radius: 0 0 100px 100px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  backdrop-filter: blur(10px);
+  // .feedback__wrapper
+  &__wrapper {
+    padding-top: 100px;
+    padding-bottom: 130px;
+  }
+
+  // .feedback__title
+  &__title {
+    margin-bottom: 50px;
+    h3 {
+      font-family: Romul;
+      font-size: 60px;
+      margin-bottom: 10px;
+
+      @include xl {
+        font-size: 40px;
+      }
+
+      @include md {
+        font-size: 20px;
+      }
+    }
+    span {
+      font-size: 25px;
+    }
+  }
+
+  // .feedback__inputs
+  &__inputs {
+    display: flex;
+    gap: 240px;
+    margin-bottom: 264px;
+
+    @include xl {
+      gap: 60px;
+      margin-bottom: 100px;
+    }
+
+    @include lg {
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+    input {
+      font-size: 20px;
+      width: 475px;
+      border-bottom: 1px solid #fff;
+
+      @include lg {
+        width: 100%;
+      }
+      &::placeholder {
+        color: #fff;
+      }
+
+      &:focus,
+      &:active {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+
+  // .feedback__row
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      text-decoration: underline;
+    }
+
+    span {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      border: 1px solid #fff;
+      width: 43px;
+      height: 46px;
+      background-color: #16304A50;
+      margin-right: 10px;
+    }
+
+    button {
+      font-size: 30px;
+      font-family: Romul;
+      padding: 16px 30px;
+      border-radius: 50px;
+      background-color: #ffffff70;
+      border: 1px solid #fff;
+
+      @include lg {
+        font-size: 15px;
+      }
+    }
+
+    @include lg {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+
+  // .feedback__notice-icon
+  &__notice-icon {
+  }
+}

@@ -1,0 +1,10 @@
+/* stylelint-disable scss/at-forward-partial-extension */
+// базовые подключения
+@use "sass:math";
+
+@forward "vars";
+@forward "mixins";
+@forward "fonts";
+@forward "settings";
+@forward "ui";
+@forward "./components/*";

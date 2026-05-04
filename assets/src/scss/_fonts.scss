@@ -1,0 +1,187 @@
+@use "mixins" as *; // @include font-face("Font Example", "../fonts/Font-Example-Regular", 400, normal);  Пример подключения шрифта в проект
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-Thin.woff2") format("woff2"),
+          url("../fonts/Mont-Thin.woff") format("woff"),
+          url("../fonts/Mont-Thin.ttf") format("ttf");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-Thin.woff2") format("woff2"),
+          url("../fonts/Mont-Thin.woff") format("woff"),
+          url("../fonts/Mont-Thin.ttf") format("ttf");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-ExtraLight.woff2") format("woff2"),
+          url("../fonts/Mont-ExtraLight.woff") format("woff"),
+          url("../fonts/Mont-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-ExtraLightItalic.woff2") format("woff2"),
+          url("../fonts/Mont-ExtraLightItalic.woff") format("woff"),
+          url("../fonts/Mont-ExtraLightItalic.ttf") format("ttf");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-Light.woff2") format("woff2"),
+          url("../fonts/Mont-Light.woff") format("woff"),
+          url("../fonts/Mont-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-LightItalic.woff2") format("woff2"),
+          url("../fonts/Mont-LightItalic.woff") format("woff"),
+          url("../fonts/Mont-LightItalic.ttf") format("ttf");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-Regular.woff2") format("woff2"),
+          url("../fonts/Mont-Regular.woff") format("woff"),
+          url("../fonts/Mont-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-RegularItalic.woff2") format("woff2"),
+          url("../fonts/Mont-RegularItalic.woff") format("woff"),
+          url("../fonts/Mont-RegularItalic.ttf") format("ttf");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-SemiBold.woff2") format("woff2"),
+          url("../fonts/Mont-SemiBold.woff") format("woff"),
+          url("../fonts/Mont-SemiBold.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-SemiBoldItalic.woff2") format("woff2"),
+          url("../fonts/Mont-SemiBoldItalic.woff") format("woff"),
+          url("../fonts/Mont-SemiBoldItalic.ttf") format("ttf");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-Bold.woff2") format("woff2"),
+          url("../fonts/Mont-Bold.woff") format("woff"),
+          url("../fonts/Mont-Bold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-BoldItalic.woff2") format("woff2"),
+          url("../fonts/Mont-BoldItalic.woff") format("woff"),
+          url("../fonts/Mont-BoBoldItalicld.ttf") format("ttf");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-Heavy.woff2") format("woff2"),
+          url("../fonts/Mont-Heavy.woff") format("woff"),
+          url("../fonts/Mont-Heavy.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-HeavyItalic.woff2") format("woff2"),
+          url("../fonts/Mont-HeavyItalic.woff") format("woff"),
+          url("../fonts/Mont-HeavyItalic.ttf") format("ttf");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-Black.woff2") format("woff2"),
+          url("../fonts/Mont-Black.woff") format("woff"),
+          url("../fonts/Mont-Black.ttf") format("ttf");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+          url("../fonts/Mont-BlackItalic.woff2") format("woff2"),
+          url("../fonts/Mont-BlackItalic.woff") format("woff"),
+          url("../fonts/Mont-BlackItalic.ttf") format("ttf");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Romul";
+  src:
+          url("../fonts/romul.woff2") format("woff2"),
+          url("../fonts/romul.woff") format("woff"),
+          url("../fonts/romul.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

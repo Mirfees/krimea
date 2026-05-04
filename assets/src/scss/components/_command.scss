@@ -1,0 +1,117 @@
+@use "mixins" as *;
+
+.command {
+  margin-bottom: 42px;
+  border-radius: 0 0 100px 100px;
+
+  // .command__wrapper
+  &__wrapper {
+  }
+
+  // .command__title
+  &__title {
+    font-size: 60px;
+
+    @include xl {
+      font-size: 40px;
+    }
+
+    @include md {
+      font-size: 20px;
+    }
+  }
+
+  // .command__grid-wrapper
+  &__grid-wrapper {
+    position: relative;
+    padding-top: 67px;
+    padding-bottom: 135px;
+    border-radius: 0 0 100px 100px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+    overflow: hidden;
+
+    @include lg {
+      padding-top: 20px;
+      padding-bottom: 100px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      inset: 0;
+
+      backdrop-filter: blur(30px);
+      mask-image: linear-gradient(to bottom,
+              rgba(0,0,0,0) 0,
+              rgba(0,0,0,1) 40%
+      );
+    }
+  }
+
+  // .command__grid
+  &__grid {
+    display: grid;
+    gap: 57px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    @media (max-width: 1900px) {
+      gap: 30px;
+    }
+
+    @media (max-width: 1700px) {
+      gap: 15px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include xl {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include lg {
+      display: flex;
+      overflow-x: scroll;
+    }
+  }
+
+  // .command__card
+  &__card {
+    .liquid-glass--edge,
+    .liquid-glass--face,
+    .liquid-glass--bend,
+    .liquid-glass {
+      border-radius: 40px;
+    }
+    .liquid-glass__link {
+      font-family: Romul;
+      height: 400px;
+      position: relative;
+      padding: 40px 3px;
+      border-radius: 40px;
+      border: 1px solid #fff;
+      overflow: hidden;
+
+      @include lg {
+        min-width: 300px;
+        flex-shrink: 0;
+      }
+
+      img {
+        position: absolute;
+        object-fit: contain;
+        width: 100%;
+        bottom: 0;
+        height: 312px;
+      }
+
+      h4 {
+        text-align: center;
+        font-size: 28px;
+        color: #16304A;
+      }
+    }
+  }
+}

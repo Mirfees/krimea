@@ -1,0 +1,20 @@
+@use "mixins" as *;
+
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family:
+          "Mont", sans-serif; //  Здесь нужно подключить шрифт основного текста проекта
+  --content-width: 1800px;
+  --container-offset: 90px;
+  --container-width: calc(
+          var(--content-width) + (var(--container-offset) * 2)
+  );
+  --color-background-light: #325978;
+  --text: #fff;
+
+  @include lg {
+    --container-offset: 10px;
+  }
+}
