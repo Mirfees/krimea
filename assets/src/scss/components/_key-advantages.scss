@@ -29,11 +29,12 @@
   // .key-advantages__title
   &__title {
     text-align: center;
-    font-size: 88px;
-    margin-bottom: 35px;
+    font-size: 4.5833vw;
+    margin-bottom: 1.82291666vw;
 
     @include xl {
-      font-size: 60px;
+      font-size: 3.125vw;
+      margin-bottom: 30px;
     }
 
     @include md {
@@ -49,10 +50,15 @@
   // .key-advantages__tabs-nav
   &__tabs-nav {
     width: 100%;
-    padding: 18px 70px;
+    padding: 0.9375vw 3.64583vw;
     border: 1px solid #fff;
     border-radius: 50px;
-    margin-bottom: 18px;
+    margin-bottom: 0.9375vw;
+
+    @include xl {
+      margin-bottom: 28px;
+      padding: 18px 30px;
+    }
 
     .liquid-glass--edge,
     .liquid-glass--face,
@@ -64,15 +70,22 @@
     .liquid-glass__link {
       display: flex;
       justify-content: space-between;
-      gap: 51px;
-      @include xl {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
+      gap: 2.65625vw;
+      font-size: 1.0416vw;
+
+      @media (max-width: 1440px) {
+        font-size: 0.842vw;
       }
 
-      @include lg {
+      @include xl {
+        font-size: 20px;
+      }
+
+      @include xl {
+        flex-wrap: nowrap;
+        overflow: scroll;
         padding: 16px 16px;
+        gap: 20px;
       }
     }
   }
@@ -87,18 +100,23 @@
 
   // .key-advantages__nav-btn
   &__nav-btn {
-    padding: 8px 10px;
+    padding: 0.416vw 0.52083vw;
     border-radius: 50px;
     transition: background-color 0.2s;
 
     &:hover {
       background-color: #16304A5A;
     }
+
+    @include xl {
+      padding: 8px 10px;
+      white-space: nowrap;
+    }
   }
 
   // .key-advantages__tabs-container
   &__tabs-container {
-    margin-bottom: 102px;
+    margin-bottom: 5.3125vw;
   }
 
   // .key-advantages__tab-content
@@ -108,13 +126,18 @@
   // .key-advantages__tab-content-text
   &__tab-content-text {
     color: #16304A;
-    font-size: 17px;
-    padding: 20px 21px;
+    font-size: 0.885416vw;
+    padding: 1.0416vw 1.09375vw;
     border-radius: 40px;
     border: 1px solid #fff;
     background: rgba(255, 255, 255, 0.5);
-    margin-bottom: 32px;
+    margin-bottom: 1.6666vw;
     font-weight: 400;
+
+    @include xl {
+      padding: 10px 21px;
+      margin-bottom: 30px;
+    }
 
     @include lg {
       font-size: 16px;
@@ -124,16 +147,11 @@
   // .key-advantages__tab-content-grid
   &__tab-content-grid {
     display: grid;
-    gap: 57px;
+    gap: 2.96875vw;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    
-    @media (max-width: 1900px) {
-      gap: 30px;
-    }
 
-    @media (max-width: 1700px) {
-      gap: 15px;
-      grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: 1440px)  {
+      gap: 1.96875vw;
     }
 
     @include xl {
@@ -141,8 +159,7 @@
     }
 
     @include lg {
-      display: flex;
-      overflow-x: scroll;
+      display: none;
     }
   }
 
@@ -158,6 +175,10 @@
     background: rgba(255, 255, 255, 10);
     background: linear-gradient(180deg,rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
 
+    @media (max-width: 1600px) {
+      height: 300px;
+    }
+
     .liquid-glass--edge,
     .liquid-glass--face,
     .liquid-glass--bend,
@@ -166,8 +187,9 @@
     }
 
     @include lg {
-      min-width: 250px;
+      max-width: 320px;
       flex-shrink: 0;
+      margin: 0 auto;
     }
 
     img {
@@ -180,9 +202,20 @@
     h4 {
       position: relative;
       text-align: center;
-      font-size: 28px;
+      font-size: 1.458333333vw;
       color: #16304A;
       z-index: 1;
+
+      @include xl {
+        font-size: 18px;
+      }
     }
+  }
+}
+.key-swiper {
+  display: none !important;
+
+  @include lg {
+    display: block !important;
   }
 }

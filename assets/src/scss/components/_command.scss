@@ -10,7 +10,7 @@
 
   // .command__title
   &__title {
-    font-size: 60px;
+    font-size: 3.125vw;
 
     @include xl {
       font-size: 40px;
@@ -55,16 +55,11 @@
   // .command__grid
   &__grid {
     display: grid;
-    gap: 57px;
+    gap: 2.96875vw;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
-    @media (max-width: 1900px) {
-      gap: 30px;
-    }
-
-    @media (max-width: 1700px) {
-      gap: 15px;
-      grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: 1440px)  {
+      gap: 1.96875vw;
     }
 
     @include xl {
@@ -72,7 +67,7 @@
     }
 
     @include lg {
-      display: flex;
+      display: none;
       overflow-x: scroll;
     }
   }
@@ -94,8 +89,12 @@
       border: 1px solid #fff;
       overflow: hidden;
 
+      @media (max-width: 1440px) {
+        height: 300px;
+      }
+
       @include lg {
-        min-width: 300px;
+
         flex-shrink: 0;
       }
 
@@ -105,6 +104,10 @@
         width: 100%;
         bottom: 0;
         height: 312px;
+
+        @media (max-width: 1440px) {
+          height: 200px;
+        }
       }
 
       h4 {
@@ -113,5 +116,18 @@
         color: #16304A;
       }
     }
+
+    @include lg {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.command-swiper {
+  display: none !important;
+
+  @include lg {
+    display: block !important;
   }
 }

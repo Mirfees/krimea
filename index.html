@@ -8,9 +8,16 @@
     <title>Новостройки в Крыму</title>
     <link rel="stylesheet" href="./assets/build/css/vendor.css">
     <link rel="stylesheet" href="./assets/build/css/main.css">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
 </head>
 <body>
 <div class="shadow"></div>
+<div class="main">
+
+</div>
 <header class="header">
     <div class="container-header">
         <div class="header__wrapper">
@@ -33,21 +40,21 @@
                         <span>Республика Крым,<br> г. Алушта, ул. Ленина, д. 27А</span>
                     </div>
                 </div>
-                <div class="social-header">
-                    <ul>
-                        <li>
-                            <a href="#whatsapp">
-                                <img src="./assets/build/img/svg/whatsapp.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#telegram">
-                                <img src="./assets/build/img/svg/tg.svg" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                    <a href="tel:79788718100">+7 (978) 871-81-00</a>
-                </div>
+            </div>
+            <div class="social-header -desktop-">
+                <ul>
+                    <li>
+                        <a href="#whatsapp">
+                            <img src="./assets/build/img/svg/whatsapp.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#telegram">
+                            <img src="./assets/build/img/svg/tg.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <a href="tel:79788718100">+7 (978) 871-81-00</a>
             </div>
             <div class="burger__wrapper">
                 <div class="social-header -mobile-">
@@ -197,30 +204,77 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="key-advantages__tab-panel tabs__panel">
-                        <p class="key-advantages__tab-content-text">Комплексно сопровождаем инвестиции в недвижимость Крыма: от подбора стратегически выгодных объектов до полного сопровождения сделки и последующего управления активом. Проводим детальный анализ доходности, оцениваем ликвидность, сроки окупаемости и потенциал роста стоимости с учётом локации, стадии строительства, инфраструктуры и рыночных тенденций. Подбираем решения под разные инвестиционные стратегии — для пассивного дохода, перепродажи или сохранения капитала. Помогаем минимизировать риски и сформировать сбалансированный портфель недвижимости, ориентированный на долгосрочную прибыль и стабильность.</p>
-                        <div class="key-advantages__tab-content-grid">
-                            <div class="key-advantages__tab-card">
-                                <h4>Жилые комплексы</h4>
-                                <img src="./assets/build/img/card-1.png" alt="">
+                        <div class="key-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Жилые комплексы</h4>
+                                                <img src="./assets/build/img/card-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Апартаменты</h4>
+                                                <img src="./assets/build/img/card-2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Вторичная недвижимость</h4>
+                                                <img src="./assets/build/img/card-3.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Коммерция</h4>
+                                                <img src="./assets/build/img/card-4.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Дома</h4>
+                                                <img src="./assets/build/img/card-5.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="key-advantages__tab-card">
-                                <h4>Апартаменты</h4>
-                                <img src="./assets/build/img/card-2.png" alt="">
-                            </div>
-                            <div class="key-advantages__tab-card">
-                                <h4>Вторичная недвижимость</h4>
-                                <img src="./assets/build/img/card-3.png" alt="">
-                            </div>
-                            <div class="key-advantages__tab-card">
-                                <h4>Коммерция</h4>
-                                <img src="./assets/build/img/card-4.png" alt="">
-                            </div>
-                            <div class="key-advantages__tab-card">
-                                <h4>Дома</h4>
-                                <img src="./assets/build/img/card-5.png" alt="">
-                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                     <div class="key-advantages__tab-panel tabs__panel">
@@ -247,30 +301,77 @@
                                 <img src="./assets/build/img/card-5.png" alt="">
                             </div>
                         </div>
-                    </div>
-                    <div class="key-advantages__tab-panel tabs__panel">
-                        <p class="key-advantages__tab-content-text">Комплексно сопровождаем инвестиции в недвижимость Крыма: от подбора стратегически выгодных объектов до полного сопровождения сделки и последующего управления активом. Проводим детальный анализ доходности, оцениваем ликвидность, сроки окупаемости и потенциал роста стоимости с учётом локации, стадии строительства, инфраструктуры и рыночных тенденций. Подбираем решения под разные инвестиционные стратегии — для пассивного дохода, перепродажи или сохранения капитала. Помогаем минимизировать риски и сформировать сбалансированный портфель недвижимости, ориентированный на долгосрочную прибыль и стабильность.</p>
-                        <div class="key-advantages__tab-content-grid">
-                            <div class="key-advantages__tab-card">
-                                <h4>Жилые комплексы</h4>
-                                <img src="./assets/build/img/card-1.png" alt="">
+                        <div class="key-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Жилые комплексы</h4>
+                                                <img src="./assets/build/img/card-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Апартаменты</h4>
+                                                <img src="./assets/build/img/card-2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Вторичная недвижимость</h4>
+                                                <img src="./assets/build/img/card-3.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Коммерция</h4>
+                                                <img src="./assets/build/img/card-4.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Дома</h4>
+                                                <img src="./assets/build/img/card-5.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="key-advantages__tab-card">
-                                <h4>Апартаменты</h4>
-                                <img src="./assets/build/img/card-2.png" alt="">
-                            </div>
-                            <div class="key-advantages__tab-card">
-                                <h4>Вторичная недвижимость</h4>
-                                <img src="./assets/build/img/card-3.png" alt="">
-                            </div>
-                            <div class="key-advantages__tab-card">
-                                <h4>Коммерция</h4>
-                                <img src="./assets/build/img/card-4.png" alt="">
-                            </div>
-                            <div class="key-advantages__tab-card">
-                                <h4>Дома</h4>
-                                <img src="./assets/build/img/card-5.png" alt="">
-                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                     <div class="key-advantages__tab-panel tabs__panel">
@@ -296,6 +397,272 @@
                                 <h4>Дома</h4>
                                 <img src="./assets/build/img/card-5.png" alt="">
                             </div>
+                        </div>
+                        <div class="key-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Жилые комплексы</h4>
+                                                <img src="./assets/build/img/card-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Апартаменты</h4>
+                                                <img src="./assets/build/img/card-2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Вторичная недвижимость</h4>
+                                                <img src="./assets/build/img/card-3.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Коммерция</h4>
+                                                <img src="./assets/build/img/card-4.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Дома</h4>
+                                                <img src="./assets/build/img/card-5.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="key-advantages__tab-panel tabs__panel">
+                        <p class="key-advantages__tab-content-text">Комплексно сопровождаем инвестиции в недвижимость Крыма: от подбора стратегически выгодных объектов до полного сопровождения сделки и последующего управления активом. Проводим детальный анализ доходности, оцениваем ликвидность, сроки окупаемости и потенциал роста стоимости с учётом локации, стадии строительства, инфраструктуры и рыночных тенденций. Подбираем решения под разные инвестиционные стратегии — для пассивного дохода, перепродажи или сохранения капитала. Помогаем минимизировать риски и сформировать сбалансированный портфель недвижимости, ориентированный на долгосрочную прибыль и стабильность.</p>
+                        <div class="key-advantages__tab-content-grid">
+                            <div class="key-advantages__tab-card">
+                                <h4>Жилые комплексы</h4>
+                                <img src="./assets/build/img/card-1.png" alt="">
+                            </div>
+                            <div class="key-advantages__tab-card">
+                                <h4>Апартаменты</h4>
+                                <img src="./assets/build/img/card-2.png" alt="">
+                            </div>
+                            <div class="key-advantages__tab-card">
+                                <h4>Вторичная недвижимость</h4>
+                                <img src="./assets/build/img/card-3.png" alt="">
+                            </div>
+                            <div class="key-advantages__tab-card">
+                                <h4>Коммерция</h4>
+                                <img src="./assets/build/img/card-4.png" alt="">
+                            </div>
+                            <div class="key-advantages__tab-card">
+                                <h4>Дома</h4>
+                                <img src="./assets/build/img/card-5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="key-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Жилые комплексы</h4>
+                                                <img src="./assets/build/img/card-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Апартаменты</h4>
+                                                <img src="./assets/build/img/card-2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Вторичная недвижимость</h4>
+                                                <img src="./assets/build/img/card-3.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Коммерция</h4>
+                                                <img src="./assets/build/img/card-4.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Дома</h4>
+                                                <img src="./assets/build/img/card-5.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="key-advantages__tab-panel tabs__panel">
+                        <p class="key-advantages__tab-content-text">Комплексно сопровождаем инвестиции в недвижимость Крыма: от подбора стратегически выгодных объектов до полного сопровождения сделки и последующего управления активом. Проводим детальный анализ доходности, оцениваем ликвидность, сроки окупаемости и потенциал роста стоимости с учётом локации, стадии строительства, инфраструктуры и рыночных тенденций. Подбираем решения под разные инвестиционные стратегии — для пассивного дохода, перепродажи или сохранения капитала. Помогаем минимизировать риски и сформировать сбалансированный портфель недвижимости, ориентированный на долгосрочную прибыль и стабильность.</p>
+                        <div class="key-advantages__tab-content-grid">
+                            <div class="key-advantages__tab-card">
+                                <h4>Жилые комплексы</h4>
+                                <img src="./assets/build/img/card-1.png" alt="">
+                            </div>
+                            <div class="key-advantages__tab-card">
+                                <h4>Апартаменты</h4>
+                                <img src="./assets/build/img/card-2.png" alt="">
+                            </div>
+                            <div class="key-advantages__tab-card">
+                                <h4>Вторичная недвижимость</h4>
+                                <img src="./assets/build/img/card-3.png" alt="">
+                            </div>
+                            <div class="key-advantages__tab-card">
+                                <h4>Коммерция</h4>
+                                <img src="./assets/build/img/card-4.png" alt="">
+                            </div>
+                            <div class="key-advantages__tab-card">
+                                <h4>Дома</h4>
+                                <img src="./assets/build/img/card-5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="key-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Жилые комплексы</h4>
+                                                <img src="./assets/build/img/card-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Апартаменты</h4>
+                                                <img src="./assets/build/img/card-2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Вторичная недвижимость</h4>
+                                                <img src="./assets/build/img/card-3.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Коммерция</h4>
+                                                <img src="./assets/build/img/card-4.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="key-advantages__tab-card liquid-glass">
+                                        <div class="liquid-glass--bend"></div>
+                                        <div class="liquid-glass--face"></div>
+                                        <div class="liquid-glass--edge"></div>
+                                        <div class="liquid-glass__inner">
+                                            <div class="liquid-glass__link">
+                                                <h4>Дома</h4>
+                                                <img src="./assets/build/img/card-5.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
@@ -382,6 +749,78 @@
                     </div>
                 </div>
             </div>
+            <div class="command-swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="command__card liquid-glass">
+                            <div class="liquid-glass--bend"></div>
+                            <div class="liquid-glass--face"></div>
+                            <div class="liquid-glass--edge"></div>
+                            <div class="liquid-glass__inner">
+                                <div class="liquid-glass__link">
+                                    <h4>Менеджер</h4>
+                                    <img src="./assets/build/img/command-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="command__card liquid-glass">
+                            <div class="liquid-glass--bend"></div>
+                            <div class="liquid-glass--face"></div>
+                            <div class="liquid-glass--edge"></div>
+                            <div class="liquid-glass__inner">
+                                <div class="liquid-glass__link">
+                                    <h4>Риелтор</h4>
+                                    <img src="./assets/build/img/command-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="command__card liquid-glass">
+                            <div class="liquid-glass--bend"></div>
+                            <div class="liquid-glass--face"></div>
+                            <div class="liquid-glass--edge"></div>
+                            <div class="liquid-glass__inner">
+                                <div class="liquid-glass__link">
+                                    <h4>Юрист</h4>
+                                    <img src="./assets/build/img/command-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="command__card liquid-glass">
+                            <div class="liquid-glass--bend"></div>
+                            <div class="liquid-glass--face"></div>
+                            <div class="liquid-glass--edge"></div>
+                            <div class="liquid-glass__inner">
+                                <div class="liquid-glass__link">
+                                    <h4>Брокер</h4>
+                                    <img src="./assets/build/img/command-4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="command__card liquid-glass">
+                            <div class="liquid-glass--bend"></div>
+                            <div class="liquid-glass--face"></div>
+                            <div class="liquid-glass--edge"></div>
+                            <div class="liquid-glass__inner">
+                                <div class="liquid-glass__link">
+                                    <h4>Ипотечный специалист</h4>
+                                    <img src="./assets/build/img/command-5.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
     </div>
 </section>
@@ -446,7 +885,77 @@
                     </div>
                 </div>
             </div>
-
+            <div class="best-offer-swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="best-offer__card -quartal-">
+                            <h5>Жилой квартал просторы крыма</h5>
+                            <p>Современный жилой квартал у моря в одном из самых живописных городов Южного берега Крыма. Комплекс расположен в районе с развитой инфраструктурой и удобным доступом к набережной, пляжам, магазинам и ресторанам.</p>
+                            <img class="best-offer__card-bg" src="./assets/build/img/offer-1.png" alt="">
+                            <a href="#"><img src="./assets/build/img/svg/arrow.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="best-offer__card -stab-">
+                            <img class="best-offer__card-bg" src="./assets/build/img/offer-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="best-offer__card -stab-">
+                            <img class="best-offer__card-bg" src="./assets/build/img/offer-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="best-offer__card -stab-">
+                            <img class="best-offer__card-bg" src="./assets/build/img/offer-4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="best-offer__card -apartment-">
+                            <div class="best-offer__card-info">
+                                <div class="best-offer__card-info-title">Квартира 120 м2</div>
+                                <span>Адрес</span>
+                                <span>Цена 6.000.000 ₽</span>
+                            </div>
+                            <a href="#">посмотреть все новостройки <img src="./assets/build/img/svg/arrow.svg" alt=""></a>
+                            <img class="best-offer__card-bg" src="./assets/build/img/offer-5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="best-offer__card -stab-">
+                            <img class="best-offer__card-bg" src="./assets/build/img/offer-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="best-offer__card -apartment-">
+                            <div class="best-offer__card-info">
+                                <div class="best-offer__card-info-title">Студии — от ≈ 6,5 млн ₽ <br>1-комнатные — от ≈ 7,8 млн ₽
+                                    <br>2-комнатные — от ≈ 10,5 млн ₽ <br>Апартаменты — от ≈ 12,9 млн ₽</div>
+                            </div>
+                            <a href="#">посмотреть все новостройки <img src="./assets/build/img/svg/arrow.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="best-offer__card -stab-">
+                            <img class="best-offer__card-bg" src="./assets/build/img/offer-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="best-offer__card -apartment-">
+                            <div class="best-offer__card-info">
+                                <div class="best-offer__card-info-title">Квартира 120 м2</div>
+                                <span>Адрес</span>
+                                <span>Цена 6.000.000 ₽</span>
+                            </div>
+                            <a href="#">посмотреть все новостройки <img src="./assets/build/img/svg/arrow.svg" alt=""></a>
+                            <img class="best-offer__card-bg" src="./assets/build/img/offer-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
     </div>
 </section>

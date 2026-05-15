@@ -8,7 +8,7 @@
 
   // .catalogue__title
   &__title {
-    font-size: 60px;
+    font-size: 3.125vw;
     text-align: left;
     margin-bottom: 35px;
 
@@ -28,7 +28,7 @@
   // .catalogue__btns
   &__btns {
     display: flex;
-    gap: 48px;
+    gap: 2.5vw;
     margin-bottom: 32px;
 
     @include lg {
@@ -41,8 +41,8 @@
   // .catalogue__btn
   &__btn {
     font-family: Romul;
-    font-size: 30px;
-    padding: 13px 20px;
+    font-size: 1.5625vw;
+    padding: 0.677083vw 1.0416vw;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 40px;
     border: 1px solid #fff;
@@ -51,6 +51,7 @@
 
     @include lg {
       font-size: 15px;
+      padding: 16px;
       max-width: 400px;
     }
 
@@ -61,7 +62,7 @@
 
   // .catalogue__hint
   &__hint {
-    font-size: 24px;
+    font-size: 1.25vw;
     line-height: 33px;
     font-weight: 400;
 

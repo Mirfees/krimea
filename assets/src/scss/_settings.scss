@@ -63,6 +63,10 @@ a {
   padding: 20px 30px;
   max-width: var(--container-width);
   margin: 0 auto;
+
+  @include md {
+    padding: 8px 10px;
+  }
 }
 
 .page__body {

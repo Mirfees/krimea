@@ -18,7 +18,7 @@
     margin-bottom: 50px;
     h3 {
       font-family: Romul;
-      font-size: 60px;
+      font-size: 3.125vw;
       margin-bottom: 10px;
 
       @include xl {
@@ -30,14 +30,18 @@
       }
     }
     span {
-      font-size: 25px;
+      font-size: 1.302083vw;
+
+      @include xl {
+        font-size: 18px;
+      }
     }
   }
 
   // .feedback__inputs
   &__inputs {
     display: flex;
-    gap: 240px;
+    gap: 12.5vw;
     margin-bottom: 264px;
 
     @include xl {
@@ -50,9 +54,13 @@
       margin-bottom: 50px;
     }
     input {
-      font-size: 20px;
-      width: 475px;
+      font-size: 1.04167vw;
+      width: 24.7935vw;
       border-bottom: 1px solid #fff;
+
+      @include xl {
+        font-size: 18px;
+      }
 
       @include lg {
         width: 100%;
@@ -86,19 +94,28 @@
       align-items: center;
       border-radius: 50px;
       border: 1px solid #fff;
-      width: 43px;
-      height: 46px;
+      width: 2.239583vw;
+      height: 2.39583vw;
       background-color: #16304A50;
       margin-right: 10px;
+
+      @include lg {
+        width: 35px;
+        height: 35px;
+      }
     }
 
     button {
-      font-size: 30px;
+      font-size: 1.5625vw;
       font-family: Romul;
-      padding: 16px 30px;
+      padding: 0.833vw 1.5625vw;
       border-radius: 50px;
       background-color: #ffffff70;
       border: 1px solid #fff;
+
+      @include xl {
+        padding: 16px 32px;
+      }
 
       @include lg {
         font-size: 15px;

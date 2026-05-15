@@ -16,7 +16,7 @@
 
   // .best-offer__title
   &__title {
-    font-size: 60px;
+    font-size: 3.125vw;
 
     @include xl {
       font-size: 40px;
@@ -29,32 +29,35 @@
 
   // .best-offer__hint
   &__hint {
-    font-size: 25px;
+    font-size: 1.302083vw;
     line-height: 33px;
-    max-width: 900px;
+    max-width: 46.875vw;
     font-weight: 400;
 
     @include xl {
       font-size: 20px;
+    }
+
+    @include lg{
+      max-width: 100%;
     }
   }
 
   // .best-offer__grid
   &__grid {
     display: grid;
-    gap: 36px;
+    gap: 1.875vh;
 
     @include xl {
-      gap: 16px;
-      display: flex;
-      overflow-x: scroll;
+      display: none;
     }
+
   }
 
   // .best-offer__row
   &__row {
     display: grid;
-    gap: 63px;
+    gap: 3.28125vw;
 
     @include xl {
       gap: 16px;
@@ -94,11 +97,16 @@
     overflow: hidden;
     border-radius: 40px;
     border: 1px solid #fff;
-    padding: 30px;
+    padding: 1.5625vw;
 
     @include xl {
       min-width: 500px;
+      padding: 30px;
       flex-shrink: 1;
+    }
+
+    @include lg {
+      min-width: 100%;
     }
 
     &.-quartal- {
@@ -174,8 +182,8 @@
   &__card-info {
     display: flex;
     flex-direction: column;
-    gap: 9px;
-    font-size: 28px;
+    gap: 0.446785vw;
+    font-size: 1.458333vw;
     position: relative;
     z-index: 1;
   }
@@ -187,5 +195,13 @@
     @include lg {
       font-size: 20px;
     }
+  }
+}
+
+.best-offer-swiper {
+  display: none !important;
+
+  @include xl {
+    display: block !important;
   }
 }
